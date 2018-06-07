@@ -1,0 +1,182 @@
+
+
+
+
+@import 'variables';
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import '../node_modules/font-awesome/scss/font-awesome';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+$use-fade               :   true;
+$use-bounce             :   true;
+$use-rotate  : true;
+$use-slide  : true;
+$use-tada: true;
+@import '../node_modules/animate-sass/animate';
+
+html, body {
+    height: 100%;
+}
+
+p, h2, h3, h4, h5, h6 {
+    line-height: 1.6rem;
+    font-weight: 100;
+}
+
+h2 {
+    font: 100 2.2rem Roboto,Arial,Helvetica;
+    margin-bottom: 1.5em;
+} 
+
+
+.navbar{
+    background: transparent !important;
+    /*color: #fff;*/
+    position: fixed;
+    z-index: 4444;
+    width: 100%;
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+    &-brand {
+        text-transform: capitalize;
+        color: #fff !important;
+        font-size: 21px;
+        font-weight: 100;
+    }
+}
+.brand-letter {
+
+    color: $primary;
+    font-size: 25px;
+    font-weight: 200;
+    padding-right: 2px;
+}
+.blackk {
+    background: rgba(0, 0, 0, 0.8) !important;
+    color: #fff !important;
+}
+/*
+
+#carousel{
+
+   .carousel-caption {
+       padding-bottom: 12rem;
+   }
+}
+*/
+
+section {
+    padding: 3.5rem 0; 
+}
+
+/********************* About Section ******************/ 
+#about {
+    background: url('../pics/bg.jpg') center center;
+    background-attachment: fixed;
+    background-size: cover;
+    h4 {
+        font: 300 1.4rem Roboto,Arial,Helvetica;
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+    h2 {
+        margin: 2.6rem;
+    }
+    i {
+        font-size: 1.5rem;
+    }
+}
+.partener {
+    padding: 0 4% 11% 0;
+}
+
+
+#services .container ul li {
+
+    border: #888 solid 2px;
+    border-radius: 50%;
+    width: 138px;
+    height: 138px;
+    padding-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+#portfolio {
+    overflow: hidden;
+    .pro {
+        cursor: pointer;
+        &:hover {
+            .overlay {
+                top: 0;
+                z-index: 55;
+                transition: all 0.5s ease-in-out;
+                -webkit-transform: rotateX(0deg);
+                transform: rotateX(0);
+                color: #fff;
+                button {
+                    font-weight: 100;
+                    line-height: 1.2;
+                    font-family: sans-serif, -webkit-body;
+                }
+            }
+        }
+    }
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.4);
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90);
+       /* perspective-origin: bottom;*/
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+
+#team {
+    background: url('../pics/bg.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#info {
+
+    background: url('../pics/bg2.jpg') center center, rgba(255, 0, 0, 0.3);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    color: white !important;
+    font-size: 0.8rem;
+    .row {
+        margin-bottom: 0;
+        padding: 4rem 0;
+    }
+}
+
+#contact {
+    background: url('../pics/bg.jpg') center center;
+    background-size: cover;
+}
+footer {
+    background: #000;
+    color: $primary;
+    min-height: 15rem;
+    align-content: center;
+    li {
+        cursor: pointer;
+    }
+}
+.form-control:focus {
+
+    border: 1px solid #ced4da;
+    box-shadow: none;
+
+}
